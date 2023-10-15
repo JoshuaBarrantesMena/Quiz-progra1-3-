@@ -6,7 +6,7 @@ protected:
 	string tipoPlumas;
 	string tipoAlas;
 public:
-	Aves(string, string, int, string, string, string, string, bool, string, string);
+	Aves(char[], char[], int, char[], char[], char[], char[], bool, char[], char[]);
 	Aves();
 	~Aves();
 

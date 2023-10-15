@@ -5,7 +5,7 @@ class Mamiferos:public Vertebrados{
 protected:
 	string tipoAlimentacion;
 public:
-	Mamiferos(string, string, int, string, string, string, string, bool, string);
+	Mamiferos(char[], char[], int, char[], char[], char[], char[], bool, char[]);
 	Mamiferos();
 	~Mamiferos();
 

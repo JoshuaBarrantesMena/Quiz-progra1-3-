@@ -1,6 +1,6 @@
 #include "ReinoAnimal.h"
 
-ReinoAnimal::ReinoAnimal(string pAlimentoFavorito, bool pViajaEnManada){
+ReinoAnimal::ReinoAnimal(char pAlimentoFavorito[], bool pViajaEnManada) {
 
 	alimentoFavorito = pAlimentoFavorito;
 	viajaEnManada = pViajaEnManada;

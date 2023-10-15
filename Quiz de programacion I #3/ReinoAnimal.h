@@ -8,7 +8,7 @@ protected:
 	string alimentoFavorito;
 	bool viajaEnManada;
 public:
-	ReinoAnimal(string, bool);
+	ReinoAnimal(char[], bool);
 	ReinoAnimal();
 	~ReinoAnimal();
 	virtual void adiestrarse() = 0;

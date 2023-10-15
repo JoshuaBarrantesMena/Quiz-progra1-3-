@@ -1,29 +1,23 @@
 #include "Mamiferos.h"
 
-Mamiferos::Mamiferos(string pTipoCuerpo, string pTipoRespiracion, int pCantExtremidades, string pTipoDesplazamiento,
-	string pTipoReproduccion, string pHabitat, string pAlimentoFavorito, bool pViajarEnManada, string pTipoAlimentacion) {
+Mamiferos::Mamiferos(char pTipoCuerpo[], char pTipoRespiracion[], int pCantExtremidades, char pTipoDesplazamiento[],
+	char pTipoReproduccion[], char pHabitat[], char pAlimentoFavorito[], bool pViajarEnManada, char pTipoAlimentacion[]) :
+	Vertebrados(pTipoCuerpo, pTipoRespiracion, pCantExtremidades, pTipoDesplazamiento,
+		pTipoReproduccion, pHabitat, pAlimentoFavorito, pViajarEnManada) {
 
-	tipoCuerpo = pTipoCuerpo;
-	tipoRespiración = pTipoRespiracion;
-	cantExtremidades = pCantExtremidades;
-	tipoDesplazamiento = pTipoDesplazamiento;
-	tipoReproduccion = pTipoReproduccion;
-	habitat = pHabitat;
-	alimentoFavorito = pAlimentoFavorito;
-	viajaEnManada = pViajarEnManada;
 	tipoAlimentacion = pTipoAlimentacion;
 }
 
-Mamiferos::Mamiferos() {
+Mamiferos::Mamiferos(){
 
+	alimentoFavorito = " ";
+	viajaEnManada = " ";
 	tipoCuerpo = " ";
 	tipoRespiración = " ";
 	cantExtremidades = 0;
 	tipoDesplazamiento = " ";
 	tipoReproduccion = " ";
 	habitat = " ";
-	alimentoFavorito = " ";
-	viajaEnManada = false;
 	tipoAlimentacion = " ";
 }
 
@@ -34,10 +28,14 @@ Mamiferos::~Mamiferos() {
 void Mamiferos::caminar() {
 
 	desplazarse();
-	printf("Este vertebrado puede caminar con sus s% Extremidades.\n", cantExtremidades);
+	printf("\n");
+	printf("Este vertebrado puede caminar con sus %d Extremidades.", cantExtremidades);
+	printf("\n");
 }
 
 void Mamiferos::respirar() {
 
-	printf("Este mamifero puede respirar.\n");
+	printf("\n");
+	printf("Este mamifero puede respirar.");
+	printf("\n");
 }

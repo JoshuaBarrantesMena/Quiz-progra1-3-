@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,14 +130,18 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mamiferos.cpp" />
+    <ClCompile Include="Perro.cpp" />
     <ClCompile Include="ReinoAnimal.cpp" />
     <ClCompile Include="Aves.cpp" />
+    <ClCompile Include="Tucan.cpp" />
     <ClCompile Include="Vertebrados.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mamiferos.h" />
+    <ClInclude Include="Perro.h" />
     <ClInclude Include="ReinoAnimal.h" />
     <ClInclude Include="Aves.h" />
+    <ClInclude Include="Tucan.h" />
     <ClInclude Include="Vertebrados.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

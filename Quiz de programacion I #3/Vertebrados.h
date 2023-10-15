@@ -10,7 +10,7 @@ protected:
 	string tipoReproduccion;
 	string habitat;
 public:
-	Vertebrados(string, string, int, string, string, string, string, bool);
+	Vertebrados(char[], char[], int, char[], char[], char[], char[], bool);
 	Vertebrados();
 	~Vertebrados();
 	void alimentarse();
